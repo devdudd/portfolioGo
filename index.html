@@ -21,7 +21,7 @@
     <title>PortfolioGo</title>
 </head>
 
-<body>
+<body onLoad="slide1()">
     <header>
         <div>
             <h1 class="goTitulo">Portfolio<span class="go">Go</span></h1>
@@ -36,25 +36,44 @@
         </div>
     </header>
     <main>
-        <section id="banner">
-            
+        <section id="inicio" class="d-flex flex-row justify-content-between">
+            <div class="conteudo">
+                <h2>Conheça nosso processo criativo e se apaixone!</h2>
+                <p>Os melhores criadores de site de portfólio são aqueles que fazem o trabalho pesado por você. Nossas ferramentas de inteligência artificial conseguem fazer de tudo — use o Gerador de Conteúdo para criar cores para seu portfólio online, ou otimizar o layout do site e gerar mais conversões.</p>
+                <ul>
+                    <li>CRIATIVO</li>
+                    <li>EFICIÊNTE</li>
+                    <li>ENCANTADOR</li>
+                    <li>ASSERTIVO</li>
+                </ul>
+            </div>
+            <div id="banner">
+                <img class="selected" src="./IMG/1_Aq7TXpuzXp8lTX0Dhxw_DQ.jpeg" alt="">
+                <img src="./IMG/1_bIUXCGYsVTXyBndd4suLfA.jpeg" alt="">
+                <img src="./IMG/1_lHvZOpk9b6J35Y6qpDaBDQ.jpeg" alt="">
+                <img src="./IMG/1_ymmhDOxPOxWxFCk6J2Dj4w.jpeg" alt="">
+            </div>
         </section>
         <section id="cadastro" class="d-flex flex-row">
             <div class="img">
-                <img src="./IMG/Vector.png" alt="Criação do Portfolio" width="500" height="300" >
+                <img src="./IMG/tools-template.jpeg" alt="Criação do Portfolio" width="400" height="300">
             </div>
             <div class="listaEspera">
-                <h2>TESTANDO</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore qui inventore distinctio quasi doloribus molestias voluptas dolores ea blanditiis. Asperiores aspernatur commodi recusandae officiis nostrum. Totam nulla dignissimos sed delectus.</p>
+                <h2>TENHA O MELHOR PORTFÓLIO DO MERCADO</h2>
+                <p>Um <b>portfólio</b> pode ser uma ferramenta bastante importante para <b>promover</b> qualquer
+                    carreira. Para <b>devs</b>, em especial, ele funciona como uma vitrine dos trabalhos, apresentando
+                    as habilidades, qualificações, formação e experiência do profissional. Além disso, a ferramenta
+                    expõe uma pequena parte de sua <b>personalidade</b>. Em resumo, o <b>portfólio representa você</b>.
+                    Cadastre-se para receber mais informações sobre nosso serviço!</p>
                 <button onclick="window.location.href = '../HTML/listaDeEspera.html'">Inscreva-se!</button>
             </div>
         </section>
     </main>
     <footer class="bg-light text-center text-lg-start">
-        <div class="text-center p-3" style="background-color: var(--main);">
-          © 2022 Copyright: Grupo 10. Resilia Educação.
+        <div class="text-center p-3" style="background-color: var(--secundary);">
+            © 2022 Copyright: Grupo 10. Resilia Educação.
         </div>
-      </footer>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -66,4 +85,5 @@
         crossorigin="anonymous"></script>
     <script src="./JS/index.js"></script>
 </body>
+
 </html>
