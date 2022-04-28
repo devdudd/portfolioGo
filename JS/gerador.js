@@ -1,20 +1,39 @@
+document.getElementById("btn-enviar").addEventListener("click", start);
+var arr = [];
+function start(event) {
+    event.preventDefault();
+
+    var person = {
+        nome : document.getElementById("nome").value,
+        email : document.getElementById("email").value,
+        linkedIn : document.getElementById("linkedIn").value,
+        github :document.getElementById("github").value,
+        skills : document.getElementById("skills").value,
+        cep : document.getElementById("cep").value
+    }
+        document.getElementById("txt").value = generatorHtml(person);
+}
+
+function formatSkills(skills){
+
+}
+
 //Gerador de Cores Randomicas
 function generateColor() {
     const letters = '0123456789ABCDEF';
     let color = '#';
     for (let i = 0; i < 6; i++)
-      color += letters[Math.floor(Math.random() * 16)];
+        color += letters[Math.floor(Math.random() * 16)];
 
-    return color; 
-  }
-  
+    return color;
+}
+
 //Gerar HTMl + Variveis
-function generatorHtml(){
+function generatorHtml(person) {
     return `<!DOCTYPE html>
-    <html lang-en>
-    
+    <html lang="pt-br">
     <head>
-        <title></title>
+        <title>${person.nome}</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap">
@@ -23,15 +42,15 @@ function generatorHtml(){
             html,
             body {
                 font-family: 'Ubuntu', sans-serif;
-                background-color: #ccccff;
+                background-color: ${generateColor()};
                 max-width: 100%;
                 height: auto;
                 margin: 0;
             }
     
             header {
-                background-color: #0000cc;
-                color: #ffffff;
+                background-color: ${generateColor()};
+                color: ${generateColor()};
                 text-align: center;
                 padding: 0.1em;
             }
@@ -51,13 +70,13 @@ function generatorHtml(){
     
             .left-column {
                 flex: 33%;
-                background-color: #fff5ef;
+                background-color: ${generateColor()};
                 padding: 20px;
             }
     
             .right-column {
                 flex: 66%;
-                background-color: #fff5ef;
+                background-color: ${generateColor()};
                 padding: 20px;
             }
     
@@ -93,13 +112,13 @@ function generatorHtml(){
                 text-align: left;
                 margin-left: 0.3em;
                 margin-top: -0.4em;
-                color:#0000cc;
+                color:${generateColor()};
                 padding-top: 3%;
                 font-size: 35px;
             }
     
             .card {
-                background-color: #ffffff;
+                background-color: ${generateColor()};
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
                 padding-bottom: 2em;
             }
@@ -108,7 +127,7 @@ function generatorHtml(){
             .exper-panel,
             .edu-panel {
                 font-size: 16px;
-                color: #666666;
+                color: ${generateColor()};
                 padding: 0.5em 1.5em;
                 padding-left: 5%;
             }
@@ -116,7 +135,7 @@ function generatorHtml(){
             .skills-bar,
             .language-bar {
                 width: 100%;
-                background-color: #e6e6ff;
+                background-color: ${generateColor()};
                 border-radius: 1em;
             }
     
@@ -129,55 +148,55 @@ function generatorHtml(){
     
             .html {
                 width: 90%;
-                background-color: #0000cc;
+                background-color: ${generateColor()};
                 border-radius: 1em;
             }
     
             .css {
                 width: 80%;
-                background-color: #0000cc;
+                background-color: ${generateColor()};
                 border-radius: 1em;
             }
     
             .js {
                 width: 65%;
-                background-color: #0000cc;
+                background-color: ${generateColor()};
                 border-radius: 1em;
             }
     
             .php {
                 width: 60%;
-                background-color: #0000cc;
+                background-color: ${generateColor()};
                 border-radius: 1em;
             }
     
             .english {
                 width: 100%;
-                background-color: #0000cc;
+                background-color: ${generateColor()};
                 border-radius: 1em;
             }
     
             .spanish {
                 width: 75%;
-                background-color: #0000cc;
+                background-color: ${generateColor()};
                 border-radius: 1em;
             }
     
             .french {
                 width: 60%;
-                background-color: #0000cc;
+                background-color: ${generateColor()};
                 border-radius: 1em;
             }
     
             .german {
                 width: 40%;
-                background-color: #0000cc;
+                background-color: ${generateColor()};
                 border-radius: 1em;
             }
     
             mark {
                 padding: 5px;
-                background-color: #0000cc;
+                background-color: ${generateColor()};
                 color: white;
                 border-radius: 0.2em;
             }
@@ -185,21 +204,21 @@ function generatorHtml(){
             footer {
                 text-align: center;
                 text-decoration: none;
-                background-color: #0000cc;
-                color: #33ffff;
+                background-color: ${generateColor()};
+                color: ${generateColor()};
                 padding: 1em;
             }
     
             .social-links {
-                color: #ffffff;
+                color: ${generateColor()};
             }
     
             .social-links :hover {
-                color: #33ffff;
+                color: ${generateColor()};
             }
     
             a {
-                color: #33ffff;
+                color: ${generateColor()};
                 text-decoration: none;
             }
         </style>
@@ -208,8 +227,6 @@ function generatorHtml(){
     <body>
         <!-- Title Across the Top -->
         <header>
-            <br>
-            <br>
         </header>
         <!-- Left Column Info -->
         <div class="row">
@@ -217,19 +234,19 @@ function generatorHtml(){
                 <div class="card">
                     <!-- Enter Your Name -->
                     <div class="profile-all">
-                        <h2 class="profile-text">John Doe</h2>
+                        <h2 class="profile-text">${person.nome}</h2>
                         <div class="profile-image">
                     </div>
                     </div>
                     <div class="info-panel" style="font-size: 16px;">
                         <!-- Enter Your Basic Info -->
-                        <p><i class="fa fa-briefcase fa-lg" style="color:#0000cc"></i> &nbsp; Web Designer</p>
-                        <p><i class="fa fa-home fa-lg" style="color:#0000cc"></i> &nbsp; London, UK</p>
-                        <p><i class="fa fa-envelope fa-lg" style="color:#0000cc"></i> &nbsp; youremail@mail.com</p>
-                        <p><i class="fa fa-phone fa-lg" style="color:#0000cc"></i> &nbsp; 0123456789</p>
+                        <p><i class="fa fa-briefcase fa-lg" style="color:${generateColor()}"></i> &nbsp;${person.profission}</p>
+                        <p><i class="fa fa-home fa-lg" style="color:${generateColor()}"></i> &nbsp; ${person.cep}</p>
+                        <p><i class="fa fa-envelope fa-lg" style="color:${generateColor()}"></i> &nbsp; ${person.email}</p>
+                        <p><i class="fa fa-phone fa-lg" style="color:${generateColor()}"></i> &nbsp; ${person.phone}9</p>
                         <hr>
                         <!-- Enter Your Skills Here-->
-                        <p><b><i class="fa fa-asterisk fa-lg" style="color:#0000cc"></i>
+                        <p><b><i class="fa fa-asterisk fa-lg" style="color:${generateColor()}"></i>
                                 &nbsp; Skills</b></p>
                         <p>HTML</p>
                         <div class="skills-bar">
@@ -269,12 +286,9 @@ function generatorHtml(){
                 <i class="fab fa-instagram fa-3x" href="#"></i>
                 <i class="fab fa-snapchat fa-3x" href="#"></i>
             </div>
-            <p>Copyright &copy &#8226; 2022
+            <p>Copyright &copy &${generateColor()}; 2022
         </footer>
     </body>
     
     </html>`
 }
-console.log((GeneratorHtml()));
-
-exports.GeneratorHtml = GeneratorHtml;
