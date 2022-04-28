@@ -14,10 +14,6 @@ function start(event) {
         document.getElementById("txt").value = generatorHtml(person);
 }
 
-function formatSkills(skills){
-
-}
-
 //Gerador de Cores Randomicas
 function generateColor() {
     const letters = '0123456789ABCDEF';
