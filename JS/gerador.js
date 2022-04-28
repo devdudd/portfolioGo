@@ -236,10 +236,10 @@ function generatorHtml(person) {
                     </div>
                     <div class="info-panel" style="font-size: 16px;">
                         <!-- Enter Your Basic Info -->
-                        <p><i class="fa fa-briefcase fa-lg" style="color:${generateColor()}"></i> &nbsp;${person.profission}</p>
+                        <p><i class="fa fa-briefcase fa-lg" style="color:${generateColor()}"></i> &nbsp;</p>
                         <p><i class="fa fa-home fa-lg" style="color:${generateColor()}"></i> &nbsp; ${person.cep}</p>
                         <p><i class="fa fa-envelope fa-lg" style="color:${generateColor()}"></i> &nbsp; ${person.email}</p>
-                        <p><i class="fa fa-phone fa-lg" style="color:${generateColor()}"></i> &nbsp; ${person.phone}9</p>
+                        <p><i class="fa fa-phone fa-lg" style="color:${generateColor()}"></i> &nbsp; 9</p>
                         <hr>
                         <!-- Enter Your Skills Here-->
                         <p><b><i class="fa fa-asterisk fa-lg" style="color:${generateColor()}"></i>
