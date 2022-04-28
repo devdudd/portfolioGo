@@ -1,7 +1,7 @@
 section{
     padding: 30px;
     background-color: var(--bgInput);
-    height:89vh;
+    height:120vh;
 }
 .card {
 
@@ -10,6 +10,7 @@ section{
     border-radius: 8px;
     width:280px;
     margin: 20px auto 0 650px;
+    height:auto;
 }
 
 .card-header {
@@ -130,4 +131,25 @@ section{
 }
 
 
+#logar{
+    padding: 20px 50px 20px 50px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: var(--main);
+    color:var(--basic);
+    line-height: 0px;
+    font-size: 18px;
+    width: 100%;
+    border: none !important;
+    outline: none !important;
+}
 
+#alerta-login-invalido{
+    background-color: red;
+    color: white;
+    padding: 10px !important;
+}
+#alerta-login-invalido span{
+    font-size: 10px;
+    text-align:center !important;
+}

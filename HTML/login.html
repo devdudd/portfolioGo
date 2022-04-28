@@ -39,22 +39,27 @@
         <section>
                 <div id="login">
                     <form class="card">
+                        <div class="alert alert-warning alert-dismissible fade show" style="display: none;" id="alerta-login-invalido" role="alert">
+                            <span id="msg-login-invalido"></span>
+                        </div>
                         <div class="card-header">
                             <h2>Login</h2>
                         </div>
                         <div class="card-content">
                             <div class="card-content-area">
                                 <label for="usuario">Usuário</label>
-                                <input type="text" id="autocomplete="off" placeholder="Usuário">
+                                <input id="email" type="text">
 
                             </div>
                         </div>
                         <div class="card-content">
                             <div class="card-content-area">
                                 <label for="usuario">Senha</label>
-                                <input type="password" id="autocomplete="off" placeholder="*******">
+                                <input id="senha" type="password">
                             </div>
                         </div>
+                        <button type="button" id="logar" style="background-color:var(--main)" class="btn btn-primary">Entrar</button>
+
                         <div class="card-footer">
                                 <a href="recuperacaoDeSenha.html" class="recuperar_senha"> 
                                     Esqueceu a senha? 
@@ -77,6 +82,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    <script src="./JS/"></script>
+    <script src="../JS/login.js"></script>
 </body>
 </html>
