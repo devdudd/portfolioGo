@@ -1,0 +1,62 @@
+section{
+    padding: 30px;
+    background-color: var(--bgInput);
+    font-family: 'Josefin Sans';
+    font-style: normal;
+}
+.flexcontainer{
+    display:flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.flexcontainerItem{
+    padding: 10px;
+    width: 45%;
+    height: auto;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius:8px;
+    opacity: 0.8;
+
+    
+}
+.entreEmContato{
+    text-align:center;
+    font-size:24px;
+    color: var(--txt);
+    font-weight:bolder;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+}
+
+.itemContato{
+    margin: 20px 0 0;
+    text-align:left;
+    font-size:14px;
+    color: var(--txt);
+    font-weight:regular;
+}
+.equipe{
+    margin: 20px 0 0;
+    padding: 5px;
+    text-align: left;
+    font-size:18px;
+    color: var(--txt);
+    font-weight:regular;
+}
+.equipe ul{
+    list-style-type: none;
+    text-align: left;
+    font-size:14px;
+    color: var(--txt);
+    font-weight:regular;
+}
+.imgcontato {
+   flex-direction: column;
+   border-radius: 20px;
+}

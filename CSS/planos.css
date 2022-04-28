@@ -1,0 +1,111 @@
+section{
+    padding: 30px;
+    background-color: var(--bgInput);
+    font-family: 'Josefin Sans';
+    font-style: normal;
+}
+.flexcontainer{
+    display:flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.flexcontainerItem{
+    background: var(--secundary);
+    padding: 5px;
+    width: 30%;
+    height: 400px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius:8px;
+    opacity: 0.8;
+
+    
+}
+.flexcontainerItem:hover{
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 6px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    opacity: 1;
+    scale: 1.2;
+}
+.tituloPlano{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    line-height: 20px;
+}
+.subtituloPlano{
+    text-align: center;
+    font-size: 18px;
+    font-weight: regular;
+    text-transform: uppercase;
+    padding: 10px;
+    line-height: 20px;
+}
+
+.diferencaPlano {
+   list-style-type: none;
+   padding: 20px;
+   height: 200px;
+}
+
+.precoPlano{
+    color:var(--txt);
+    font-size: 24px;
+    text-align: center;
+    padding: 2px;
+}
+
+
+.botaoComprar input{
+    padding: 20px 50px 20px 50px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: var(--main);
+    color:var(--basic);
+    line-height: 0px;
+    font-size: 18px;
+    width: 80%;
+}
+
+.botaoComprar{
+    padding: 10px;
+    height: 25px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .flexcontainerItem{
+        background: var(--secundary);
+        padding: 5px;
+        width: 90%;
+        height: 400px;
+        margin-top: 10px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        border-radius:8px;
+        opacity: 0.8;  
+    }
+  }
+
+  .c-loader {
+    animation: is-rotating 1s infinite;
+    border: 6px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: var(--main);;
+    height: 50px;
+    width: 50px;
+    margin: -40px auto;
+  }
+  
+  @keyframes is-rotating {
+    to {
+      transform: rotate(1turn);
+    }
+  }

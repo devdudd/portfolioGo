@@ -59,3 +59,20 @@
     background-color: aqua;
     width: 60%;
 }
+#retorno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#retorno h3 {
+    margin-right: 25%;
+    font-size: 35px;
+}
+textarea {
+    width: 400px;
+    height: 200px;
+    resize: none;
+    margin-bottom: 3%;
+    background-color: var(--secundary);
+}

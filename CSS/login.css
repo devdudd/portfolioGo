@@ -1,0 +1,155 @@
+section{
+    padding: 30px;
+    background-color: var(--bgInput);
+    height:120vh;
+}
+.card {
+
+    background-color: var(--secundary);
+    padding: 40px;
+    border-radius: 8px;
+    width:280px;
+    margin: 20px auto 0 650px;
+    height:auto;
+}
+
+.card-header {
+    color: var(--basic);
+    padding-bottom: 50px;
+}   
+
+.card-header h2{
+
+    font-weight:bolder;
+    text-align: center;
+    color: var(--basic);
+
+}
+
+.card-header::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    display: block;
+    margin-top: -17px;
+    margin-left: -5px;
+
+}
+
+.card-content label {
+    color: var(--basic);
+    font-size: 12px;
+    opacity: 0.8;
+
+}
+
+.card-content-area {
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding:10px 0;
+
+}
+
+.card-content-area input {
+
+    padding:15px 40px 15px 40px;
+    background-color: white;
+    border:none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    color: #000;
+    margin: 10px auto;
+    width: 95%;
+}
+
+.card-content-area label{
+    color: var(--basic);
+    font-weight:bolder;
+    text-align:center;
+}
+
+
+.card-footer {
+
+    display: flex;
+
+    flex-direction:column-reverse;
+
+}
+
+.card-footer .submit{
+
+    width: 100%;
+
+    height: 40px;
+
+
+    background-color: #ffc75f;
+
+    border:none;
+
+    color: #474554;
+
+    margin: 10px 0;
+
+}
+
+.card-footer a {
+
+    text-align: center;
+
+    font-size: 12px;
+
+    opacity: 0.8;
+
+    color: #fff;
+
+    text-decoration: none;
+
+}
+
+
+.recuperar_senha{
+    font-size: 10px;
+    text-align:center;
+}
+
+.img{
+  
+    padding: 5px;
+    width: 515px;
+    height: 515px;
+    margin-top: -450px;
+    font-weight: bold;
+   
+
+
+}
+
+
+#logar{
+    padding: 20px 50px 20px 50px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: var(--main);
+    color:var(--basic);
+    line-height: 0px;
+    font-size: 18px;
+    width: 100%;
+    border: none !important;
+    outline: none !important;
+}
+
+#alerta-login-invalido{
+    background-color: red;
+    color: white;
+    padding: 10px !important;
+}
+#alerta-login-invalido span{
+    font-size: 10px;
+    text-align:center !important;
+}
