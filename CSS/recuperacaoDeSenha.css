@@ -1,0 +1,42 @@
+section{
+    padding: 30px;
+    background-color: var(--bgInput);
+    height: 80vh;
+}
+
+.recuperacaoContainer{
+    margin:0 auto;
+    width: 400px;
+    height: 200px;
+    background-color: var(--secundary);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.tituloRecuperacao{
+    text-align:center;
+    font-size: 18px;
+    font-weight:bold;
+    font-family: 'Josefin Sans';
+    color: var(--txt);
+}
+
+.inputRecuperacao{
+    width: 80%;
+    margin: 20px auto;
+    height: 45px;
+    display: block;
+    padding: 10px;
+}
+
+.btnRecuperar{
+    width: 80%;
+    margin: 20px auto;
+    height: 45px;
+    display: block;
+    padding: 10px;
+    background-color: var(--main);
+    color: var(--txt);
+    font-weight:bolder;
+}
+

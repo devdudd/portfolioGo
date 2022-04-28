@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/reset.css">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../CSS/planos.css">
     <title>PortfolioGo</title>
 </head>
 
@@ -37,10 +37,53 @@
     </header>
     <main>
         <section>
+            <div class="flexcontainer">
+                <div class="flexcontainerItem">
+                    <div class="tituloPlano">
+                        Plano Free
+                    </div>
+                    <div class="subtituloPlano">
+                        Portifolio Go plano Free!
+                    </div>
+                    <ul class="diferencaPlano">
+                        <li>Acesso ao template Basic</li>
+                        <li>Dicas dos nossos especialistas</li>
+                        <li>Acesso a comunidade GO</li>
+                       
+                    </ul>
+                    <div class="precoPlano">
+                        GRÁTIS
+                    </div>
+                    <div class="botaoComprar">
+                        <input type="button" value="Comprar!">
+                    </div>
+                </div>
+                <div class="flexcontainerItem">
+                    <div class="tituloPlano">
+                        Plano Premium
+                    </div>
+                    <div class="subtituloPlano">
+                        Portifólio Go Plano Premium!
+                    </div>
+                    <ul class="diferencaPlano">
+                        <li>Acesso à mais de 100 templates exclusivos</li>
+                        <li>Dicas dos nossos especialistas</li>
+                        <li>Acesso a comunidade GO</li>
+                        <li>Atualização de template </li>
+                        <li>Acesso ilimitado a plataforma GO</li>
+                    </ul>
+                    <div class="precoPlano" id="precodoPlano">
+                        R$9,90
+                    </div>
+                    <div class="precoPlano" style="display:none;"  id="loaderTeste">
+                        <div class="c-loader" id="planoloader"></div>
+                    </div>
 
-        </section>
-        <section>
-
+                    <div class="botaoComprar">
+                        <input id="botaoComprar "type="button" value="Comprar!" onClick="testethais()">
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="bg-light text-center text-lg-start">
@@ -60,3 +103,13 @@
     <script src="./JS/"></script>
 </body>
 </html>
+
+
+<script>
+    function testethais(){
+        $("#precodoPlano").html('');
+        $("#loaderTeste").css('display','block');
+
+        
+    }
+</script>
