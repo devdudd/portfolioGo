@@ -104,4 +104,7 @@ button:hover {
     color: var(--main);
     transition-duration: 0.40s;
 }
+footer {
+    background-color: var(--secundary);
+}
 
