@@ -68,19 +68,19 @@ DOCUMENTAÇÃO E REFERÊNCIAS
 * API ViaCEP - https://viacep.com.br/
 
 ### F.A.Q.
-**Vamos ver o conteúdo de Bootstrap no curso?**
-○ Não! A ideia é que vocês pesquisem a documentação e comecem a
+1.**Vamos ver o conteúdo de Bootstrap no curso?**
+ Não! A ideia é que vocês pesquisem a documentação e comecem a
 praticar ativamente o processo de consumir a documentação de uma
 tecnologia para aprender como utilizá-la.
-**Posso usar outro framework de CSS? Bulma por exemplo?**
-○ Sim, desde que os demais requisitos não sejam afetados por conta disso.
-**Posso utilizar outras APIs além da API do ViaCEP?**
-○ Sim, desde que os demais requisitos não sejam afetados por conta disso.
-**A página de cadastro deve salvar os dados em algum banco de dados?**
-○ Não, vamos chegar nessa parte ainda nos módulos 3 e 4, até lá vamos
-criar páginas que simulam esse fluxo, mas não vamos  adastrar de verdade os usuários.
-**Todos devem trabalhar no código do projeto?**
-○ Sim, vamos checar no Github os envios e quem participou escrevendo
+2. **Posso usar outro framework de CSS? Bulma po2 exemplo?**
+ Sim, desde que os demais requisitos não sejam afetados por conta disso.
+3. **Posso utilizar outras APIs além da API do ViaCEP?1.**
+ Sim, desde que os demais requisitos não sejam afetados2por conta disso.
+4. **A página de cadastro deve salvar os dados em algum banco de dados?1.**
+ Não, vamos chegar nessa parte ainda nos módulos 3 e 4,2até lá vamos
+criar páginas que simulam esse fluxo, mas não vamos2 adastrar de verdade os usuários.
+5.**Todos devem trabalhar no código do projeto?**
+ Sim, vamos che2ar no Github os envios e quem participou escrevendo
 código para o projeto, se organizem para dividirem as tarefas e garantir que todos estão atuando em algum ponto do código.
 
 |      Taks       |       Status       |
@@ -88,6 +88,7 @@ código para o projeto, se organizem para dividirem as tarefas e garantir que to
 |    Directory    | :white_check_mark: |
 |      index      | :white_check_mark: |
 |     contato     | :white_check_mark: |
+|     equipe      | :white_check_mark: |
 |     gerador     | :white_check_mark: |
 | Lista de espera | :white_check_mark: |
 |      Login      | :white_check_mark: |
